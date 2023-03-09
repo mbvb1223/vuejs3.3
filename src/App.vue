@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import Footer from './components/common/Footer.vue'
 </script>
 
 <template>
   <header>
+    <h1>{{ $t('messages.email') }}</h1>
+
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
@@ -17,7 +19,9 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
   </header>
 
-  <RouterView />
+  <Footer />
+
+<!--  <RouterView />-->
 </template>
 
 <style scoped>
