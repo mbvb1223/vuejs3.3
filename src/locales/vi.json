@@ -1,5 +1,6 @@
 {
   "messages": {
+    "hello": "VI hello",
     "email": "VI email message",
     "required": "This field is required",
     "password": "Password is required",

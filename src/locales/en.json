@@ -1,5 +1,6 @@
 {
   "messages": {
+    "hello": "EN hello",
     "email": "EN email message",
     "required": "This field is required",
     "password": "Password is required",
