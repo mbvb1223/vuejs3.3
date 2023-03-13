@@ -9,9 +9,9 @@
       </va-navbar-item>
     </template>
     <template #right>
-      <va-button color="warning" class="mr-5"> Dashboard </va-button>
-      <va-button color="warning" class="mr-5"> Reports </va-button>
-      <va-button color="warning" class="mr-5"> Users </va-button>
+      <va-button color="warning" class="mr-5" to="/"> Home </va-button>
+      <va-button color="warning" class="mr-5" to="/about"> About </va-button>
+      <va-button color="warning" class="mr-5" to="/contact"> Contact </va-button>
     </template>
   </va-navbar>
 </template>
