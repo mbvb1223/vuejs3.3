@@ -4,19 +4,19 @@ const getters = {
 }
 
 const actions = {
-  getAllCities({ commit }) {
-    return new Promise((resolve, reject) => {
-
-    })
+  all({ commit }) {
+    commit('setPhotos', [{id: 1, title: 'aaaaaaa'}, {id: 2, title: 'bbbb'}])
   }
 }
 
 const mutations = {
-
+  setPhotos(state, photos) {
+    state.photos = photos
+  }
 }
 
 const state = {
-  allCities: ['sadf', 'aaa']
+  photos: []
 }
 
 export default {
