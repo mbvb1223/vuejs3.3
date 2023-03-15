@@ -2,11 +2,13 @@ import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
 import i18n from '@/plugins/i18n'
-import { createVuestic } from "vuestic-ui";
-import "vuestic-ui/css";
+import { createVuestic } from "vuestic-ui"
+import "vuestic-ui/css"
 
 import App from './App.vue'
 import router from './router'
+
+import store from '@/stores/index'
 
 import './assets/main.css'
 
@@ -16,5 +18,8 @@ app.use(createPinia())
 app.use(router)
 app.use(i18n)
 app.use(createVuestic())
+app.use(store)
 
 app.mount('#app')
+
+

@@ -10,6 +10,7 @@
     </template>
     <template #right>
       <va-button color="warning" class="mr-5" to="/"> Home </va-button>
+      <va-button color="primary" class="mr-5" to="/photos"> Photo </va-button>
       <va-button color="danger" class="mr-5" to="/about"> About </va-button>
       <va-button color="primary" class="mr-5" to="/album"> Album </va-button>
       <va-button color="info" class="mr-5" to="/posts"> Posts </va-button>
