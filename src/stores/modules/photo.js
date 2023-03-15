@@ -1,11 +1,14 @@
+import Photo from '@/services/photo'
 
 const getters = {
-  allCities: (state) => state.allCities
+  activePhotos: (state) => state.photos.filter((item) =>  item.id > 4950)
 }
 
 const actions = {
   all({ commit }) {
-    commit('setPhotos', [{id: 1, title: 'aaaaaaa'}, {id: 2, title: 'bbbb'}])
+    Photo.all().then((result) => {
+      commit('setPhotos', result.data)
+    })
   }
 }
 
