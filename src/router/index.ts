@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/containers/Home.vue'
-import Contact from '@/containers/Contact.vue'
+import Album from '@/containers/Album.vue'
+import Photo from '@/containers/Photo.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -11,9 +12,19 @@ const router = createRouter({
       component: Home
     },
     {
-      path: '/contact',
-      name: 'contact',
-      component: Contact
+      path: '/photos',
+      name: 'photo',
+      component: Photo
+    },
+    {
+      path: '/photos/:id',
+      name: 'photo_detail',
+      component: Photo
+    },
+    {
+      path: '/album',
+      name: 'album',
+      component: Album
     },
     {
       path: '/about',
