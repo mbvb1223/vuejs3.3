@@ -9,11 +9,11 @@ export default {
   // },
   computed: {
     photos() {
-      return this.$store.getters.activePhotos
+      return this.$store.getters['Photo/activePhotos']
     }
   },
   created() {
-    this.$store.dispatch('all');
+    this.$store.dispatch('Photo/all');
   }
 }
 </script>
