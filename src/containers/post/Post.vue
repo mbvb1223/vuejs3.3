@@ -14,8 +14,10 @@ export default {
 </script>
 
 <template>
-  <h1>Contact</h1>
+  <h1>Post listing page</h1>
   <template v-for="(item, index) in posts" :key="item.id">
-    <div>{{ index }} : {{ item.title }}</div>
+    <div>{{ index }} :
+      <router-link :to="`/posts/` + item.id"> {{ item.title }}</router-link>
+    </div>
   </template>
 </template>
