@@ -13,7 +13,8 @@
       <va-button color="primary" class="mr-5" to="/photos"> Photo </va-button>
       <va-button color="danger" class="mr-5" to="/about"> About </va-button>
       <va-button color="primary" class="mr-5" to="/album"> Album </va-button>
-      <va-button color="info" class="mr-5" to="/posts"> Posts </va-button>
+      <va-button color="info" class="mr-5" to="/posts"> Post </va-button>
+      <va-button color="component" class="mr-5" to="/components"> Component </va-button>
     </template>
   </va-navbar>
 </template>
