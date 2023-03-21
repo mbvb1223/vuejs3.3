@@ -40,7 +40,13 @@ const router = createRouter({
       path: '/posts/:id',
       name: 'post_item',
       component: () => import('@/containers/post/PostItem.vue')
+    },
+    {
+      path: '/components',
+      name: 'components',
+      component: () => import('@/containers/component/Component.vue')
     }
+
   ]
 })
 

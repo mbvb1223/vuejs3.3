@@ -7,4 +7,7 @@ export default {
     all() {
         return axios.get('https://jsonplaceholder.typicode.com/photos')
     },
+    valid() {
+        return axios.get('https://jsonplaceholder.typicode.com/albums')
+    },
 }
