@@ -1,20 +1,12 @@
-<script>
+<script setup>
+import ListData from '@/components/List.vue'
+import { computed } from "vue";
+import { useStore } from 'vuex'
 
-import {ListData} from '@/components/List.vue'
-
-export default {
-  computed: {
-    photos() {
-      return this.$store.getters['Photo/activePhotos']
-    },
-    inactivePhotos() {
-      return this.$store.getters['Photo/inactivePhotos']
-    }
-  },
-  created() {
-    this.$store.dispatch('Photo/all');
-  }
-}
+const store = useStore();
+store.dispatch('Photo/all')
+const activePhotos = computed(() => store.getters['Photo/activePhotos'])
+const inactivePhotos = computed(() => store.getters['Photo/inactivePhotos'])
 </script>
 
 <template>
@@ -25,10 +17,10 @@ export default {
     <div class="row">
       <div class="flex flex-col md6">
         <h1>Active components</h1>
-        <ListData :data="photos"></ListData>
+        <ListData :data="activePhotos"></ListData>
       </div>
       <div class="flex flex-col md6">
-        <h1>Inactive components</h1>
+        <ListData :data="inactivePhotos"></ListData>
       </div>
     </div>
   </va-card>
